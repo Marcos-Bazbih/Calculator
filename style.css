@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#container{
+    background-color: #74EBD5;
+    background-image: linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#calculator{
+    background: rgba(255, 255, 255, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+}
+#sumRow{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 20vh;
+}
+#sumRow input{
+    background: rgba(0, 0, 0, 0.8);
+    border: none;
+    height: 50%;
+    font-weight: bold;
+    font-size: 50px;
+    color: white;
+    text-align: end;
+}
+#sumRow #sumDisplay{
+    color: orange;
+}
+
+#firstRow, #secondRow, #thirdRow, #forthRow, #fifthRow{
+    width: 100%;
+    display: flex;
+    height: 10vh;
+}
+
+#firstRow button, #secondRow button, #thirdRow button, #forthRow button, #fifthRow button{
+    width: 25%;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid white;
+    font-weight: bold;
+    font-size: large;
+    transition: 0.2s;
+}
+
+#firstRow button:first-of-type{
+    width: 50%;
+}
+#fifthRow button:last-of-type{
+    width: 50%;
+}
+
+#firstRow button:hover, #secondRow button:hover, #thirdRow button:hover, #forthRow button:hover, #fifthRow button:hover{
+    background: orange;
+}
