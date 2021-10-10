@@ -24,14 +24,15 @@ for (let number of numbersBtn) {
 for (let operator of operatorsBtn) {
     operator.onclick = () => {
         totalSum != 0 ? firstNumber = totalSum : firstNumber = numbersDisplay.value;
+        numbersDisplay.value += operator.value;
         operatorSelected = operator.value;
-        numbersDisplay.value = "";
     };
 }
 
 
 sumBtn.onclick = () => {
-    secondNumber = numbersDisplay.value;
+    secondNumber = numbersDisplay.value.substring(numbersDisplay.value.indexOf(operatorSelected)+1);
+    let tempCalc = firstNumber + " " + operatorSelected + " " + secondNumber + " =";
     switch (operatorSelected) {
         case "+":
             totalSum = Number(firstNumber) + Number(secondNumber);
@@ -49,8 +50,8 @@ sumBtn.onclick = () => {
             console.log("Please enter numbers");
             break;
     }
-    sumDisplay.value = totalSum;
-    numbersDisplay.value = "";
+    sumDisplay.value = tempCalc;
+    numbersDisplay.value = totalSum;
 }
 
 
