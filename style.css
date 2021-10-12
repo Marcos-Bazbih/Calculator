@@ -67,3 +67,35 @@
 #firstRow button:hover, #secondRow button:hover, #thirdRow button:hover, #forthRow button:hover, #fifthRow button:hover{
     background: orange;
 }
+
+
+@media screen and (max-width:950px){
+    #calculator{
+        width: 40%;
+    }
+}
+@media screen and (max-width:800px){
+    #calculator{
+        width: 45%;
+    }
+}
+@media screen and (max-width:700px){
+    #calculator{
+        width: 50%;
+    }
+}
+@media screen and (max-width:600px){
+    #calculator{
+        width: 60%;
+    }
+}
+@media screen and (max-width:500px){
+    #calculator{
+        width: 70%;
+    }
+}
+@media screen and (max-width:400px){
+    #calculator{
+        width: 80%;
+    }
+}
